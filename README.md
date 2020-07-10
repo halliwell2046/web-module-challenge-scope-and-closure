@@ -66,8 +66,18 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+closure is used inside the function definition.
+It is inside the function and can not be called outside of it.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+the ${name} will always stay the same as what is set in the console, in this case "Dan"
+${newRoll} will change as it is set to show a random number between 1 and 6 each time is ran by using the Math.random.
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll was created inside the function 'personalDice' so that is the only usable inside where it was created.
 
 ### Task 2c - Exit Ticket
 
