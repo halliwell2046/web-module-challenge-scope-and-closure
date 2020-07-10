@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is when you create a function that returns a function inside of itself and that can not be accessed outside of that function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
