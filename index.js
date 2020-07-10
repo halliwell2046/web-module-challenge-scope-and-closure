@@ -141,5 +141,23 @@ for (let i=0; i<inningNum; i++){
      default: 
      ordinalSuffix = 'th';
  };
+ 
+ inning += ordinalSuffix;
+ let score = getScore(inningScore);
+ homeScore += score[0];
+ awayScore += score[0];
+ return innings += `${inning} inning: ${homeScore} - ${awayScore}\n`;
+}
+return innings += `\nFinal Score: ${homeScore} - ${awayScore}`;
+
+};
+
+
+function getInningScore(inningScore) {
+  return [inningScore(), inningScore()];
+};
+
+
+
 
 
