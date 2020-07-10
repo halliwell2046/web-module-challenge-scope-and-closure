@@ -82,11 +82,21 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
+function finalScore(call, numb1, points){
+  let scores = {
+    'Home' : 0,
+    'Away' : 0
+  };
+  for (let i = 0; i < numb1; i++) {
+    scores.Home += call(i, points);
+    scores.Away += call(i, points);
 
 }
+
+return { scores }
+
+}
+console.log(finalScore(inning, 8, 2));
 
 /* Task 4: 
 
@@ -109,8 +119,27 @@ and returns the score at each pont in the game, like so:
 Final Score: awayTeam - homeTeam */
 
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
-}
+
+function scoreboard(getScore, inningScore, inningNum) {
+let homeScore = 0;
+let awayScore = 0;
+let innings = '';
+
+for (let i=0; i<inningNum; i++){
+ let ordinalSuffix;
+ var inning = i + 1;
+ switch (inning){
+   case 1: 
+   ordinalSuffix = 'st';
+   break;
+   case 2: 
+   ordinalSuffix = 'nd';
+   break;
+   case 3:
+     ordinalSuffix = 'rd';
+     break;
+     default: 
+     ordinalSuffix = 'th';
+ };
 
 
